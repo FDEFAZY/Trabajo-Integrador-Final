@@ -1,0 +1,41 @@
+.title{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+.padreUno {
+    display: grid;
+    /* grid-template-columns: 300px 250px 450px; 
+    de esta manera generamos 4 columnas 
+    con las medidas indicadas*/
+    grid-template-columns: 1fr 3fr 1fr;
+    /* de esta manera dividimos el elemento en 
+     partes iguales  */
+    grid-template-rows: 650px;
+    /* indicamos la cantidad de filas 
+    y sus medidas */
+    grid-column-gap: 100px 450px 100px;
+    /* medidas de separacion entre columnas */
+    grid-row-gap: 10px;
+    /* medidas de separacion de filas */
+}
+
+.padre div {
+    width: 100%;
+    height: 100%;
+}
+.hijoUno{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.hijoDos{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
